@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="Lab1.css"/>
+		<title></title>
+	</head>
+	<body>
+	
+		<div id="header">
+			<p id="name">Rachel Trainor</p>
+			<a href="mailto:Rachel_Trainor@byu.net"><p id="email">Rachel_Trainor@byu.net</p></a>
+		</div>
+		<div class="left">
+			<br><img class = "i1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/BYU_Athletic_Logo.svg/200px-BYU_Athletic_Logo.svg.png" alt="GMI Logo" height="80" width="100">
+		</div>
+
+		<div class="right">
+		
+		<h4>Education</h4>
+		<p>B.S. in Computer Science, Brigham Young University GPA: 3.6</p> 
+			<h4>Related Work Experience</h4>
+			<p>Information Technology Analyst Intern/Developer Intern
+		<br>General Mills, Golden Valley, MN
+		<ul><li>Experience with PL/SQL and PL/SQL Developer</li>
+		<li>Developed searchable metadata for major user databases</li>
+		<li>Evaluated 50 GMI locations</li>
+		<li>Created implementation plan for enhanced 911</li>
+		<li>Focused on solutions for Avaya and Microsoft Lync</li>
+		<li>Worked with use cases, data normalization, and
+		requirements documents</ul></p>
+
+		<h4>Skills</h4>
+		<p>Languages: C#, JavaScript, PLSQL, Java, Assembly, C++, C</p>
+			
+		<h4>Leadership Experience</h4>
+		<ul><li>Vice President of Women in Computer Science Club</li>
+		<li> Officer of Women in Computer Science Club</li>
+		<li>Pathway Speaker Math/Excel/English Tutor</li>
+		<li> Course Developer Management Team </li></ul>
+		
+		<form method="post">
+
+		<input type="button" value="Click me!"
+
+		OnClick = "hint_wnd = window.open(
+		'', 'hint_wnd', 'width=50, height=60, resizable=no, scrollbars=no' );
+
+		hint_wnd.document.write( 'Welcome to my resume!!' );
+		return true;">
+
+		</form>
+	
+		<div style="text-align:center"> 
+		<br>
+			<a href="https://www.linkedin.com/profile/view?id=AAIAABYDNawBsIYhTttUJ1wvwgQOFe0WazG6MTY&trk=nav_responsive_tab_profile">View my LinkedIn Profile</a></div>
+		</div>
+		
+		<p class = "modified"> **This document was last modified <span id="lab1"></span>**</p>
+		<script>
+		document.getElementById("lab1").innerHTML = document.lastModified;
+		</script>
+	
+		
+		<div id="footer">
+			<p>602 E 600 N, Provo, UT 84606 | Tel: (563) 343-9055</p>
+		</div>		
+	</body>
+</html>
