@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<style>
+body {background-color:lightgrey;}
+h2   {color:blue; text-align:center;}
+p    {color:black;}
+img  { display: block; margin: 0 auto;}
+
+input, button { text-align: center;
+     width: 20%;
+     margin-left: auto;
+     margin-right: auto;
+     display: inline-block;
+     }
+
+</style>
+
+<body ng-app="myApp" ng-controller="todoCtrl">
+
+<div id = "header"> <h2>My Family History List</h2> </div>
+<div id = "form" align = "center">
+<form ng-submit="todoAdd()">
+    <input id = "form" type="text" ng-model="person" placeholder="Person">
+    <input id = "form" type="text" ng-model="father" placeholder="Father">
+    <input id = "form" type="text" ng-model="mother" placeholder="Mother"> 
+    <input type="submit" value="Add New">
+</form>
+</div>
+<br>
+
+<div ng-repeat="x in todoList">
+    <input type="checkbox" ng-model="x.done"> <span ng-bind="x.todoText"></span>
+</div>
+
+<p align = "center"><button ng-click="remove()">Remove marked</button></p>
+
+<br><img class = "img" src="http://www.familytree.com/wp-content/uploads/2013/12/family-tree.jpg" alt="Family Tree" height="280" width="400">
+
+<script>
+var app = angular.module('myApp', []); 
+app.controller('todoCtrl', function($scope) {
+    $scope.todoList = [];
+
+    $scope.todoAdd = function() {
+        $scope.todoList.push({todoText:$scope.person + ", " + $scope.father + ", " + $scope.mother, done:false});
+        $scope.todoInput = "";
+    };
+
+    $scope.remove = function() {
+        var oldList = $scope.todoList;
+        $scope.todoList = [];
+        angular.forEach(oldList, function(x) {
+            if (!x.done) $scope.todoList.push(x);
+        });
+    };
+});
+</script>
+
+</body>
+</html>
+
