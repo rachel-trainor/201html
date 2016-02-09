@@ -2,8 +2,9 @@
 <head> 
 <title>City Finder</title> 
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script> 
+<link type="text/css" rel="stylesheet" href="Lab2.css"/>
 
-
+<div text-align = center>
 <script>
 $(document).ready(function() { 
   $( "#cityfield" ).keyup(function() { 
@@ -18,17 +19,17 @@ $(document).ready(function() {
       everything += "</ul>";  
       $("#txtHint").html(everything);       
      }) 
-   $("#txtHint").text("Keyup "+$("#cityfield").val()); 
+   $("#txtHint").text($("#cityfield").val()); 
    });
 
-//
+
    $("#button").click(function(e){ 
      var value = $("#cityfield").val();  
      console.log(value); 
      e.preventDefault(); 
      //}); 
    $("#dispcity").text(value);
-//
+
    var myurl= "https://api.wunderground.com/api/" + "224aaaffcabb9416" + "/geolookup/conditions/q/UT/"; 
    myurl += value; 
    myurl += ".json"; 
@@ -45,23 +46,23 @@ $(document).ready(function() {
       everything += "</ul>"; 
       $("#weather").html(everything); } 
    });
-}); // added
-//
+}); 
 
 
 });
 </script>
+</div>
 
 </head>
- <body>
+ <body background = "http://www.hdwallpaperscool.com/wp-content/uploads/2013/11/awesome-nature-landscape-desktop-wallpapers-fresh-background-nature-new-images-hd.jpg">
  <form> 
-Enter A Utah City: <input type="text" id="cityfield" value=""><br> 
-Suggestion: <span id="txtHint"></span> 
+<b>Enter A Utah City:</b> <input type="text" id="cityfield" value=""><br> 
+<b>Suggestion: </b><span id="txtHint"></span> 
 <input id="button" type="submit" value="Submit">
  </form> 
-<p>City</p>
+<p><b>City</b></p>
  <textarea id="dispcity">No City</textarea>
- <p>Current Weather</p>
+ <p><b>Current Weather<b></p>
 <div id="weather">No weather</div> 
 </body> 
 </html>

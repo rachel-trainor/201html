@@ -1,0 +1,32 @@
+body {
+    background-size: cover;
+}
+form {
+    width: 960px; 
+    font-size: 20px; 
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    font-size: 15px; 
+    font-family: Tahoma;
+}
+p {
+    font-size: 18px;
+    font-family: Tahoma;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    text-align: center;
+
+}
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 100px;
+}
+div {
+    text-align: center
+}
