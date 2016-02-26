@@ -1,0 +1,8 @@
+nohup: ignoring input
+
+> citites@0.0.0 start /opt/bitnami/apache2/htdocs/201html/weather/cities
+> node ./bin/www
+
+[0mGET / [32m200 [0m10.751 ms - 2260[0m
+[0mGET /Lab2.css [33m404 [0m9.597 ms - 1196[0m
+[0mGET /Lab2.css [33m404 [0m1.906 ms - 1196[0m
