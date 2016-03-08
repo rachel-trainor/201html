@@ -1,1 +1,20 @@
 nohup: ignoring input
+[0mGET /? [36m304 [0m8.666 ms - -[0m
+[0mGET /javascripts/quote.js [36m304 [0m1.211 ms - -[0m
+[0mGET /? [36m304 [0m1.172 ms - -[0m
+[0mGET /javascripts/quote.js [36m304 [0m0.305 ms - -[0m
+[0mGET / [32m200 [0m2.590 ms - 1352[0m
+[0mGET /javascripts/quote.js [32m200 [0m1.128 ms - 1290[0m
+[0mGET /favicon.ico [33m404 [0m8.641 ms - 1136[0m
+{ author: 'Neal A. Maxwell',
+  text: 'Faith in God includes faith in His timing' }
+[0mGET /quote/random [32m200 [0m4.016 ms - 79[0m
+{ author: 'Neal A. Maxwell',
+  text: 'Faith in God includes faith in His timing' }
+[0mGET /quote/random [36m304 [0m0.822 ms - -[0m
+{ author: 'Gordon B. Hinckley',
+  text: 'You will come to know that what appears today to be a sacrifice will prove instead to be the greatest investment that you will ever make' }
+[0mGET /quote/random [32m200 [0m0.530 ms - 177[0m
+{ author: 'Henry B. Eyring',
+  text: 'If you are on the right path it wull always be uphill' }
+[0mGET /quote/random [32m200 [0m0.555 ms - 91[0m
