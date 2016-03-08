@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+ <script type="text/javascript" src="/javascripts/quote.js"></script> 
+
+<header><title>LDS Inspirational Quotes</title></header>
+<body background = "http://i.stack.imgur.com/2KkOn.png";>
+<center>
+<h2> We Truly Need Him Every Hour, Whether They Be Hours of Sunshine or Rain</h2>
+<br>
+ <img src="https://www.lds.org/bc/content/church/temples/salt-lake/images/salt-lake-808x480-SLTEMPLEKIOSK2.jpg" alt="temple" style="width:350px;height:260px;">
+<br><br> 
+<button onclick="randomQuote()">Get Inspirational Quote</button>
+<br><br>
+<div id = "quote-div" style = "width:550px;height:60px;font-family: cursive; font-weight: bold;">
+<br>
+</div>
+<br><br>
+<form id="quote-form" action="#">
+    <div>
+        <h3>Help Inspire Others</h3>
+        <section>
+            <label for="Author">Author *</label>
+            <input id="Author" type="text" class="required">
+            <label for="quote">Quote *</label>
+            <input id="quote" type="text" class="required">
+            <p>(*) Required</p>
+        </section>
+        <section>
+ 		<button type="submit" onclick="addQuote()">Add Quote</button> 
+        </section>
+    </div>
+</form>
+</center>
+</body>
+</html>
