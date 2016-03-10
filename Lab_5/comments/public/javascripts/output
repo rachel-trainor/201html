@@ -1,0 +1,21 @@
+nohup: ignoring input
+
+> comments@0.0.0 start /opt/bitnami/apache2/htdocs/201html/Lab_5/comments
+> node ./bin/www
+
+Connected
+[0mGET / [36m304 [0m5.525 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m1.544 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m332.173 ms - 2042[0m
+[0mGET /favicon.ico [33m404 [0m39.203 ms - 2042[0m
+In the GET route?
+[ { __v: 0, _id: 56e0cf388f6b98891ad32304 },
+  { __v: 0, _id: 56e0cf64141ac2a21a9cc314 },
+  { __v: 0, _id: 56e1b3f6ba779f1a2f521086 },
+  { __v: 0,
+    Comment: 'Testing',
+    Name: 'Test',
+    _id: 56e1b490efecef332fc0afc5 } ]
+[0mGET /comment [36m304 [0m18.847 ms - -[0m
+[0mGET / [36m304 [0m0.644 ms - -[0m
+[0mGET /javascripts/comments.js [36m304 [0m0.309 ms - -[0m
