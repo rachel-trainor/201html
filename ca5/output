@@ -1,0 +1,27 @@
+nohup: ignoring input
+
+> ca5@0.0.0 start /opt/bitnami/apache2/htdocs/201html/ca5
+> node ./bin/www
+
+{ [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+[0mGET / [36m304 [0m327.477 ms - -[0m
+[0mGET /javascripts/global.js [36m304 [0m4.484 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m3.787 ms - -[0m
+[0mGET /users/userlist [36m304 [0m9.706 ms - -[0m
+[0mGET / [36m304 [0m66.748 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.626 ms - -[0m
+[0mGET /javascripts/global.js [36m304 [0m0.995 ms - -[0m
+[0mGET /users/userlist [36m304 [0m2.525 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m27.715 ms - 1350[0m
+[0mGET /favicon.ico [33m404 [0m19.031 ms - 1350[0m
+[0mGET / [36m304 [0m34.647 ms - -[0m
+[0mGET /javascripts/global.js [36m304 [0m0.791 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.520 ms - -[0m
+[0mGET /users/userlist [36m304 [0m1.897 ms - -[0m
+[0mGET / [36m304 [0m32.341 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m1.204 ms - -[0m
+[0mGET /javascripts/global.js [36m304 [0m0.899 ms - -[0m
+[0mGET /users/userlist [36m304 [0m3.620 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m8.217 ms - 1350[0m
+[0mGET /favicon.ico [33m404 [0m6.582 ms - 1350[0m
